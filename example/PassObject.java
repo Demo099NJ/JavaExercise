@@ -1,9 +1,5 @@
 import java.util.*;
 
-class Letter {
-	char c;
-}
-
 public class PassObject {
 	static void f(Letter y) {
 		y.c = 'z';
@@ -15,4 +11,8 @@ public class PassObject {
 		f(x);
 		System.out.println("2: x.c: " + x.c);
 	}
+}
+
+class Letter {
+	char c;
 }
